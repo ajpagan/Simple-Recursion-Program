@@ -1,0 +1,11 @@
+w6 : main6.o Homework6.o
+        gcc main6.o Homework6.o -o Hw6
+
+main6.o : main6.c main6.h
+        gcc -ansi -Wall -c main6.c
+
+Homework6.o : Homework6.c
+        gcc -ansi -Wall -c Homework6.c
+
+clean :
+        rm *.o Hw6
